@@ -4,17 +4,19 @@
   --primary-bg-color: #ffffff;
   --primary-text-color: #000000;
   --secondary-color: #575757;
-  --btn-bg-color: #2196f3;
-  --cta-hover-color: #167bce;
+  --btn-bg-color: #dd8f98;
+  --cta-hover-color: #17002a;
   --btn-bg-light: #eeeeee;
+  --btn-border-color: #17002a;
 
   /* Dark Theme */
   --dark-primary-bg-color: #222222;
   --dark-primary-text-color: #ffffff;
   --dark-secondary-color: #c1bbbb;
-  --dark-btn-bg-color: #1e88e5;
-  --dark-cta-hover-color: #0d5e8c;
-  --dark-btn-bg-light: #eeeeee;
+  --dark-btn-bg-color: #dd8f98;
+  --dark-cta-hover-color: #d8c1b3;
+  --dark-btn-bg-light: none;
+  --dark-btn-border-color: #ffffff;
 }
 
 .dark-theme {
