@@ -333,55 +333,169 @@ article p,
 .skills {
   margin-top: 10rem;
 }
+.skills {
+  display: none;
+}
+
+.wrapper img {
+  border-radius: 1rem;
+}
+
+article,
+.wrapper h3, .wrapper1 h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  flex-wrap: wrap;
+}
+
+article p {
+  border-radius: 0.5rem;
+  flex-grow: 20;
+  padding: 1rem;
+}
+
+footer {
+  margin: 3rem 0;
+}
+.wrapper1 {
+  margin-top: -7.6rem;
+  top: -87px;
+}
+
+
+@media screen and (min-width: 899px) {
+  .skills,
+  .portfolio {
+    flex-direction: row;
+    width: 45rem;
+  }
   .skills {
-    display: none;
+    margin: 2rem auto 0;
   }
-  
-  .wrapper img {
-    border-radius: 1rem;
-  }
-  
-  article,
-  .wrapper h3, .wrapper1 h3 {
-    margin-bottom: 1.5rem;
-  }
-  
-  article {
+  .portfolio {
+    margin: 2rem auto;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrapper,.wrapper1 {
+    width: calc(48%);
+    flex: none;
+  }
+  .wrapper1 h3 {
+    margin-top: 0;
   }
   
-  article p {
-    border-radius: 0.5rem;
-    flex-grow: 20;
-    padding: 1rem;
-  }
-  
-  footer {
-    margin: 3rem 0;
-  }
+}
+.wrapper1 {
+  margin-top: none;
+  position: static;
+  top: auto;
+}
+
+/* Лишаємо вирівнювання тільки для великих екранів */
+@media screen and (min-width: 900px) {
   .wrapper1 {
     margin-top: -7.6rem;
+    position: relative;
+    top: -87px;
   }
-  
-  
-  @media screen and (min-width: 900px) {
-    .skills,
-    .portfolio {
-      flex-direction: row;
-      width: 45rem;
-    }
-    .skills {
-      margin: 2rem auto 0;
-    }
-    .portfolio {
-      margin: 2rem auto;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .wrapper,.wrapper1 {
-      width: calc(48%);
-      flex: none;
-    }
-  }
+}
+
+/* Підсвічування для кнопок */
+.btn, .btn-2 {
+  position: relative;
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, .btn-2:hover {
+  background-color: var(--cta-hover-color); /* Зміна фону */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
+}
+
+.btn:focus, .btn-2:focus {
+  outline: none; /* Вимикає стандартний обводок */
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.6); /* Підсвічування при фокусі */
+}
+
+/* Підсвічування для фреймів та зображень */
+.wrapper img {
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wrapper img:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+  transform: scale(1.05); /* Трохи збільшуємо зображення */
+}
+
+.wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+/* Стилі для кнопок */
+.btn, .btn-2 {
+  position: relative;
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Обводка при наведенні */
+.btn:hover, .btn-2:hover {
+  background-color: var(--cta-hover-color); /* Зміна фону */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
+  border: 2px solid var(--cta-hover-color); /* Додаємо обводку */
+}
+
+/* Обводка при фокусі */
+.btn:focus, .btn-2:focus {
+  outline: none; /* Вимикає стандартний обводок */
+  box-shadow: 0 0 0 3px rgba(7, 47, 79, 0.6); /* Підсвічування при фокусі */
+  border: 2px solid var(--cta-hover-color); /* Додаємо обводку при фокусі */
+}
+
+.btn:hover,
+.btn-2:hover,
+.download-btn:hover,
+.contact-btn:hover {
+  color: #ffffff;
+  background-color: var(--cta-hover-color);
+}
+
+.btn,
+.btn-2,
+.download-btn,
+.contact-btn {
+  border: 2px solid var(--btn-border-color, #17002a); /* або свій колір */
+}
+
+
+.dark-theme .btn:hover,
+.dark-theme .btn-2:hover,
+.dark-theme .download-btn:hover,
+.dark-theme .contact-btn:hover {
+  color: #000000;
+  background-color: var(--dark-cta-hover-color);
+}
+
+.dark-theme .btn,
+.dark-theme .btn-2,
+.dark-theme .download-btn,
+.dark-theme .contact-btn {
+  border: 2px solid var(--dark-btn-border-color, #ffffff); /* або інший */
+}
+
 
  
