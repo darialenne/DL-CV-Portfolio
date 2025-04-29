@@ -362,6 +362,7 @@ footer {
 }
 .wrapper1 {
   margin-top: -7.6rem;
+  top: -87px;
 }
 
 
@@ -495,6 +496,4 @@ footer {
 .dark-theme .contact-btn {
   border: 2px solid var(--dark-btn-border-color, #ffffff); /* або інший */
 }
-
-
  
