@@ -1,346 +1,502 @@
 :root {
-    /* Light Theme */
-    --primary-font: "Poppins", sans-serif;
-    --primary-bg-color: #ffffff;
-    --primary-text-color: #000000;
-    --secondary-color: #575757;
-    --btn-bg-color: #2196f3;
-    --cta-hover-color: #167bce;
-    --btn-bg-light: #eeeeee;
-  
-    /* Dark Theme */
-    --dark-primary-bg-color: #222222;
-    --dark-primary-text-color: #ffffff;
-    --dark-secondary-color: #828282;
-    --dark-btn-bg-color: #1e88e5;
-    --dark-cta-hover-color: #0d5e8c;
-    --dark-btn-bg-light: #eeeeee;
-  }
-  
-  .dark-theme {
-    --primary-bg-color: var(--dark-primary-bg-color);
-    --primary-text-color: var(--dark-primary-text-color);
-    --secondary-color: var(--dark-secondary-color);
-    --btn-bg-color: var(--dark-btn-bg-color);
-    --cta-hover-color: var(--dark-cta-hover-color);
-    --btn-bg-light: var(--dark-btn-bg-light);
-  }
-  
-  body {
-    margin: 0;
-    font-family: var(--primary-font, "Arial, sans-serif");
-    background-color: var(--primary-bg-color);
-    color: var(--primary-text-color);
-  }
-  
-  .theme-btn {
-    position: relative;
+  /* Light Theme */
+  --primary-font: "Poppins", sans-serif;
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #000000;
+  --secondary-color: #575757;
+  --btn-bg-color: #dd8f98;
+  --cta-hover-color: #17002a;
+  --btn-bg-light: #eeeeee;
+  --btn-border-color: #17002a;
+
+  /* Dark Theme */
+  --dark-primary-bg-color: #222222;
+  --dark-primary-text-color: #ffffff;
+  --dark-secondary-color: #c4bebe;
+  --dark-btn-bg-color: #dd8f98;
+  --dark-cta-hover-color: #d8c1b3;
+  --dark-btn-bg-light: none;
+  --dark-btn-border-color: #ffffff;
+}
+
+.dark-theme {
+  --primary-bg-color: var(--dark-primary-bg-color);
+  --primary-text-color: var(--dark-primary-text-color);
+  --secondary-color: var(--dark-secondary-color);
+  --btn-bg-color: var(--dark-btn-bg-color);
+  --cta-hover-color: var(--dark-cta-hover-color);
+  --btn-bg-light: var(--dark-btn-bg-light);
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font, "Arial, sans-serif");
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.theme-btn {
+  position: relative;
+
+}
+
+
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  cursor: default;
+}
+
+.hero-info h1 {
+
+  padding-top: 2rem;
+}
+
+article,
+footer,
+.hero,
+.logo-container,
+.experience,
+.cta,
+.portfolio-skills,
+.btn-bg,
+.portfolio,
+.skills {
+  display: flex;
+}
+
+.hero,
+.portfolio,
+.skills
+ {
+  flex-direction: column;
+}
+
+.hero,
+.btn-bg,
+.portfolio,
+.skills {
+  align-items: center;
+}
+
+.hero,
+.experience,
+.wrapper,
+.wrapper1 {
+  text-align: center;
+}
+
+article,
+.hero,
+.logo-container,
+.portfolio{
+  gap: 1rem;
+}
+
+.skills {
+   gap: 2rem;
+  justify-content: center; /* або space-between */
+}
+
+.wrapper, .wrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wrapper {
+  position: relative;
+  top: 10px;
+}
+
+.wrapper1 {
+  position: relative;
+  top: -85px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.wrapper h3, .wrapper1 h3 {
+  margin-top: 0;
+}
+
+.frontend-skills,
+.backend-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.logo-container {
+  padding-top: 2rem;
  
-  }
+}
 
+.hero-pic {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 7rem;
 
+}
+
+.hero-pic img,
+.wrapper img {
+  width: 100%;
+}
+
+.hero-pic img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top 0.4rem right -1.3rem;
+  transform: scale(1.9);
+}
+
+.hero-info h1,
+h2 {
+  font-weight: 400;
+}
+
+article p,
+.hero-info h2 {
+  color: var(--secondary-color);
+}
+
+.hero-info h2 {
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+footer,
+.logo-container,
+.experience,
+.cta,
+.portfolio-skills,
+.btn-bg {
+  justify-content: center;
+}
+
+.theme-btn,
+.logo-container a,
+.logo-container img {
+  height: 1.5rem;
+}
+
+.experience {
+  margin: auto;
+  margin-top: 1.4rem;
+  max-width: 20rem;
+}
+
+.experience b {
+  font-weight: 500;
+}
+
+.experience h2 {
+  width: 30%;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.cta {
+  margin-top: 1.2rem;
+}
+
+.cta,
+.btn-bg {
+  gap: 2rem;
+}
+
+.btn,
+.btn-2,
+.btn-bg {
+  border-radius: 0.7rem;
+  border: none;
+}
+
+.btn,
+.btn-2,
+.btn-bg,
+.wrapper h3,
+.wrapper1 h3 {
+  font-weight: 600;
+}
+
+.btn,
+.btn-2,
+.btn-bg,
+.wrapper,
+.wrapper1,
+.project-wrapper,
+.project-wrapper1 {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-wrapper1 img {
+  width: 82%;
+}
+
+.download-btn:hover {
+  background-color: var(--cta-hover-color);
+}
+
+.theme-btn,
+.download-btn:hover,
+.contact-btn:hover,
+.btn-2:hover,
+.wrapper img:hover {
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn-2:hover,
+.project-wrapper:hover,
+.project-wrapper1:hover,
+.logo-container a:hover {
+  transform: scale(0.98);
+}
+
+.btn:active,
+.btn-2:active,
+.project-wrapper:active,
+.project-wrapper1:active,
+.logo-container a:active {
+  transform: scale(1);
+}
+
+.contact-btn:hover,
+.download-btn {
+  background-color: var(--btn-bg-color);
+  color: white;
+}
+
+.contact-btn:hover {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-2:hover,
+.active-btn {
+  background-color: white;
+}
+
+.btn,
+.btn-2 {
+  height: 3rem;
+}
+
+.btn {
+  width: 9rem;
+}
+
+.btn-2 {
+  width: 8.5rem;
+}
+
+.download-btn {
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-skills {
+  height: 4rem;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.btn-bg {
+  width: 20rem;
+}
+.wrapper, .wrapper1 {
+  justify-content: flex-start;
+  width: 20rem;
+}
+
+article p,
+.btn-bg {
+  background-color: var(--btn-bg-light);
+}
+
+.hero,
+.portfolio
+{
+  margin-top: 2rem;
   
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0;
-    cursor: default;
-  }
+}
+.skills {
+  margin-top: 10rem;
+}
+.skills {
+  display: none;
+}
 
-  .hero-info h1 {
+.wrapper img {
+  border-radius: 1rem;
+}
 
-    padding-top: 2rem;
+article,
+.wrapper h3, .wrapper1 h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+article {
+  flex-wrap: wrap;
+}
+
+article p {
+  border-radius: 0.5rem;
+  flex-grow: 20;
+  padding: 1rem;
+}
+
+footer {
+  margin: 3rem 0;
+}
+.wrapper1 {
+  margin-top: -7.6rem;
+}
+
+
+@media screen and (min-width: 899px) {
+  .skills,
+  .portfolio {
+    flex-direction: row;
+    width: 45rem;
   }
-  
-  article,
-  footer,
-  .hero,
-  .logo-container,
-  .experience,
-  .cta,
-  .portfolio-skills,
-  .btn-bg,
-  .portfolio,
   .skills {
-    display: flex;
+    margin: 2rem auto 0;
   }
-  
-  .hero,
-  .portfolio,
-  .skills
-   {
-    flex-direction: column;
-  }
-  
-  .hero,
-  .btn-bg,
-  .portfolio,
-  .skills {
-    align-items: center;
-  }
-  
-  .hero,
-  .experience,
-  .wrapper,
-  .wrapper1 {
-    text-align: center;
-  }
-  
-  article,
-  .hero,
-  .logo-container,
-  .portfolio{
-    gap: 1rem;
-  }
-
-  .skills {
-    gap: 2rem;
-  }
-
-  .logo-container {
-    padding-top: 2rem;
-   
-  }
-  
-  .hero-pic {
-    width: 20rem;
-    height: 20rem;
-    margin-left: 7rem;
-
-  }
-  
-  .hero-pic img,
-  .wrapper img {
-    width: 100%;
-  }
-  
-  .hero-pic img {
-    height: 100%;
-    object-fit: cover;
-    object-position: top 0.4rem right -1.3rem;
-    transform: scale(1.9);
-  }
-  
-  .hero-info h1,
-  h2 {
-    font-weight: 400;
-  }
-  
-  article p,
-  .hero-info h2 {
-    color: var(--secondary-color);
-  }
-  
-  .hero-info h2 {
-    font-size: 1rem;
-    margin: 0 0 1rem 0;
-  }
-  
-  footer,
-  .logo-container,
-  .experience,
-  .cta,
-  .portfolio-skills,
-  .btn-bg {
+  .portfolio {
+    margin: 2rem auto;
+    flex-wrap: wrap;
     justify-content: center;
   }
-  
-  .theme-btn,
-  .logo-container a,
-  .logo-container img {
-    height: 1.5rem;
+  .wrapper,.wrapper1 {
+    width: calc(48%);
+    flex: none;
   }
-  
-  .experience {
-    margin: auto;
-    margin-top: 1.4rem;
-    max-width: 20rem;
-  }
-  
-  .experience b {
-    font-weight: 500;
-  }
-  
-  .experience h2 {
-    width: 30%;
-    font-weight: 300;
-    font-size: 0.9rem;
-  }
-  
-  .cta {
-    margin-top: 1.2rem;
-  }
-  
-  .cta,
-  .btn-bg {
-    gap: 2rem;
-  }
-  
-  .btn,
-  .btn-2,
-  .btn-bg {
-    border-radius: 0.7rem;
-    border: none;
-  }
-  
-  .btn,
-  .btn-2,
-  .btn-bg,
-  .wrapper h3,
   .wrapper1 h3 {
-    font-weight: 600;
+    margin-top: 0;
   }
   
-  .btn,
-  .btn-2,
-  .btn-bg,
-  .wrapper,
-  .wrapper1,
-  .project-wrapper,
-  .project-wrapper1 {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-      background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .project-wrapper1 img {
-    width: 82%;
-  }
-  
-  .download-btn:hover {
-    background-color: var(--cta-hover-color);
-  }
-  
-  .theme-btn,
-  .download-btn:hover,
-  .contact-btn:hover,
-  .btn-2:hover,
-  .wrapper img:hover {
-    cursor: pointer;
-  }
-  
-  .btn:hover,
-  .btn-2:hover,
-  .project-wrapper:hover,
-  .project-wrapper1:hover,
-  .logo-container a:hover {
-    transform: scale(0.98);
-  }
-  
-  .btn:active,
-  .btn-2:active,
-  .project-wrapper:active,
-  .project-wrapper1:active,
-  .logo-container a:active {
-    transform: scale(1);
-  }
-  
-  .contact-btn:hover,
-  .download-btn {
-    background-color: var(--btn-bg-color);
-    color: white;
-  }
-  
-  .contact-btn:hover {
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .btn-2:hover,
-  .active-btn {
-    background-color: white;
-  }
-  
-  .btn,
-  .btn-2 {
-    height: 3rem;
-  }
-  
-  .btn {
-    width: 9rem;
-  }
-  
-  .btn-2 {
-    width: 8.5rem;
-  }
-  
-  .download-btn {
-    transition: background-color 0.3s ease;
-  }
-  
-  .portfolio-skills {
-    height: 4rem;
-    margin-top: 1.5rem;
-    position: relative;
-  }
-  
-  .btn-bg,
-  .wrapper, .wrapper1 {
-    width: 20rem;
-  }
-  
-  article p,
-  .btn-bg {
-    background-color: var(--btn-bg-light);
-  }
-  
-  .hero,
-  .portfolio
-  {
-    margin-top: 2rem;
-    
-  }
-  .skills {
-    margin-top: 10rem;
 }
-  .skills {
-    display: none;
-  }
-  
-  .wrapper img {
-    border-radius: 1rem;
-  }
-  
-  article,
-  .wrapper h3, .wrapper1 h3 {
-    margin-bottom: 1.5rem;
-  }
-  
-  article {
-    flex-wrap: wrap;
-  }
-  
-  article p {
-    border-radius: 0.5rem;
-    flex-grow: 20;
-    padding: 1rem;
-  }
-  
-  footer {
-    margin: 3rem 0;
-  }
+.wrapper1 {
+  margin-top: none;
+  position: static;
+  top: auto;
+}
+
+/* Лишаємо вирівнювання тільки для великих екранів */
+@media screen and (min-width: 900px) {
   .wrapper1 {
     margin-top: -7.6rem;
+    position: relative;
+    top: -87px;
   }
-  
-  
-  @media screen and (min-width: 900px) {
-    .skills,
-    .portfolio {
-      flex-direction: row;
-      width: 45rem;
-    }
-    .skills {
-      margin: 2rem auto 0;
-    }
-    .portfolio {
-      margin: 2rem auto;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .wrapper,.wrapper1 {
-      width: calc(48%);
-      flex: none;
-    }
-  }
+}
 
- 
+/* Підсвічування для кнопок */
+.btn, .btn-2 {
+  position: relative;
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover, .btn-2:hover {
+  background-color: var(--cta-hover-color); /* Зміна фону */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
+}
+
+.btn:focus, .btn-2:focus {
+  outline: none; /* Вимикає стандартний обводок */
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.6); /* Підсвічування при фокусі */
+}
+
+/* Підсвічування для фреймів та зображень */
+.wrapper img {
+  border-radius: 1rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wrapper img:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+  transform: scale(1.05); /* Трохи збільшуємо зображення */
+}
+
+.wrapper {
+  transition: box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+/* Стилі для кнопок */
+.btn, .btn-2 {
+  position: relative;
+  border-radius: 0.7rem;
+  border: none;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Обводка при наведенні */
+.btn:hover, .btn-2:hover {
+  background-color: var(--cta-hover-color); /* Зміна фону */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
+  border: 2px solid var(--cta-hover-color); /* Додаємо обводку */
+}
+
+/* Обводка при фокусі */
+.btn:focus, .btn-2:focus {
+  outline: none; /* Вимикає стандартний обводок */
+  box-shadow: 0 0 0 3px rgba(7, 47, 79, 0.6); /* Підсвічування при фокусі */
+  border: 2px solid var(--cta-hover-color); /* Додаємо обводку при фокусі */
+}
+
+.btn:hover,
+.btn-2:hover,
+.download-btn:hover,
+.contact-btn:hover {
+  color: #ffffff;
+  background-color: var(--cta-hover-color);
+}
+
+.btn,
+.btn-2,
+.download-btn,
+.contact-btn {
+  border: 2px solid var(--btn-border-color, #17002a); /* або свій колір */
+}
+
+
+.dark-theme .btn:hover,
+.dark-theme .btn-2:hover,
+.dark-theme .download-btn:hover,
+.dark-theme .contact-btn:hover {
+  color: #000000;
+  background-color: var(--dark-cta-hover-color);
+}
+
+.dark-theme .btn,
+.dark-theme .btn-2,
+.dark-theme .download-btn,
+.dark-theme .contact-btn {
+  border: 2px solid var(--dark-btn-border-color, #ffffff); /* або інший */
+}
+
+
+
+
+
