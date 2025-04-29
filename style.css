@@ -4,19 +4,17 @@
   --primary-bg-color: #ffffff;
   --primary-text-color: #000000;
   --secondary-color: #575757;
-  --btn-bg-color: #dd8f98;
-  --cta-hover-color: #17002a;
+  --btn-bg-color: #2196f3;
+  --cta-hover-color: #167bce;
   --btn-bg-light: #eeeeee;
-  --btn-border-color: #17002a;
 
   /* Dark Theme */
   --dark-primary-bg-color: #222222;
   --dark-primary-text-color: #ffffff;
   --dark-secondary-color: #828282;
-  --dark-btn-bg-color: #dd8f98;
-  --dark-cta-hover-color: #d8c1b3;
-  --dark-btn-bg-light: none;
-  --dark-btn-border-color: #ffffff;
+  --dark-btn-bg-color: #1e88e5;
+  --dark-cta-hover-color: #0d5e8c;
+  --dark-btn-bg-light: #eeeeee;
 }
 
 .dark-theme {
@@ -403,100 +401,6 @@ footer {
     top: -87px;
   }
 }
-
-/* Підсвічування для кнопок */
-.btn, .btn-2 {
-  position: relative;
-  border-radius: 0.7rem;
-  border: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover, .btn-2:hover {
-  background-color: var(--cta-hover-color); /* Зміна фону */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
-}
-
-.btn:focus, .btn-2:focus {
-  outline: none; /* Вимикає стандартний обводок */
-  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.6); /* Підсвічування при фокусі */
-}
-
-/* Підсвічування для фреймів та зображень */
-.wrapper img {
-  border-radius: 1rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.wrapper img:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
-  transform: scale(1.05); /* Трохи збільшуємо зображення */
-}
-
-.wrapper {
-  transition: box-shadow 0.3s ease;
-}
-
-.wrapper:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легка тінь */
-}
-
-/* Стилі для кнопок */
-.btn, .btn-2 {
-  position: relative;
-  border-radius: 0.7rem;
-  border: none;
-  font-weight: 600;
-  padding: 0.8rem 1.5rem;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-}
-
-/* Обводка при наведенні */
-.btn:hover, .btn-2:hover {
-  background-color: var(--cta-hover-color); /* Зміна фону */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Підсвічування тіні */
-  border: 2px solid var(--cta-hover-color); /* Додаємо обводку */
-}
-
-/* Обводка при фокусі */
-.btn:focus, .btn-2:focus {
-  outline: none; /* Вимикає стандартний обводок */
-  box-shadow: 0 0 0 3px rgba(7, 47, 79, 0.6); /* Підсвічування при фокусі */
-  border: 2px solid var(--cta-hover-color); /* Додаємо обводку при фокусі */
-}
-
-.btn:hover,
-.btn-2:hover,
-.download-btn:hover,
-.contact-btn:hover {
-  color: #ffffff;
-  background-color: var(--cta-hover-color);
-}
-
-.btn,
-.btn-2,
-.download-btn,
-.contact-btn {
-  border: 2px solid var(--btn-border-color, #17002a); /* або свій колір */
-}
-
-
-.dark-theme .btn:hover,
-.dark-theme .btn-2:hover,
-.dark-theme .download-btn:hover,
-.dark-theme .contact-btn:hover {
-  color: #000000;
-  background-color: var(--dark-cta-hover-color);
-}
-
-.dark-theme .btn,
-.dark-theme .btn-2,
-.dark-theme .download-btn,
-.dark-theme .contact-btn {
-  border: 2px solid var(--dark-btn-border-color, #ffffff); /* або інший */
-}
-
 
 
  
